@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float-交錯漂浮</title>
+    <style>
+        *{
+        margin: 0;
+        padding:0;
+        list-style:none;
+        }
+        body{
+            padding: 100px 0;
+            background: linear-gradient(20deg, #3d5493, #1aa2a0) fixed center center / 100% 100%;
+        }
+        .wrap{
+            max-width: 1200px;
+            margin: auto;
+        }
+        .item{
+            display: flex;
+            align-items: center;
+            margin-bottom: 70px;
+        }
+        .item h2{
+            margin-bottom: 10px;
+        }
+        .item p{
+            line-height: 1.5;
+        }
+        .item .pic{
+            width: 55%;
+            flex-shrink: 0;
+        }
+        .item .pic img{
+            width: 100%;
+            vertical-align: middle;
+        }
+        .item .text{
+            width: 55%;
+            flex-shrink: 0;
+            padding: 50px 30px;
+            box-sizing: border-box;
+            position: relative;
+            z-index: 1;
+            color: #fff;
+        }
+        .item > :first-child{
+            margin-right: -10%;
+        }
+        .item:nth-child(2) .text{
+            background-color: rgba(209, 150, 167, 0.8);
+        }
+        .item:nth-child(3) .text{
+            background-color: rgba(35, 216, 177, 0.8);
+        }
+        .item:nth-child(4) .text{
+            background-color: rgba(216, 171, 103, 0.8);
+        }
+        .item:nth-child(1) .text{
+            background-color: rgba(129, 189, 185, 0.8);
+        }
+    </style>
+</head>
+<body>
+     <div class="wrap">
+         <!-- item 1 -->
+         <div class="item">
+             <div class="pic">
+                 <img src="https://picsum.photos/600/350/?random=10">
+             </div>
+             <div class="text">
+                 <h2>
+                    交錯漂浮的切版技巧
+                 </h2>
+                 <p>
+                    表明採購播放判斷宅宅格式傷心一款獎勵，告訴地址報名指南還不水溝後果公佈類別財政堅決觀念，文件大小傳統類似消費者檔案證據死了小組課程保存我這，老大一致青年心情複製跟着黑色力道深深，每年出了，智能萬元型號某種學科結果，機器你能找不到，基層在於，領域關鍵字色彩。
+                 </p>
+             </div>
+         </div>
+         <!-- item 2 -->
+         <div class="item">
+             <div class="text">
+                 <h2>
+                    交錯漂浮的切版技巧
+                 </h2>
+                 <p>
+                    名單當中圖書館命運後來本論壇原始碼，整合新浪麻煩投資者近年來我還雖然不必，快車求購最後交友這時你好本次手中感到親愛的性能或者很好未經，恢復諮詢主演光碟萬華最高重新利用僅供那天意義開放綠色商業，審批不到關心供應商複製魅力，運作適用於，企業平方米生存領域，將。
+                 </p>
+             </div>
+            <div class="pic">
+                <img src="https://picsum.photos/600/350/?random=20">
+            </div>
+        </div>
+         <!-- item 3 -->
+        <div class="item">
+            <div class="pic">
+                <img src="https://picsum.photos/600/350/?random=30">
+            </div>
+            <div class="text">
+                <h2>
+                    交錯漂浮的切版技巧
+                </h2>
+                <p>
+                    演員私服排名，藝術世界盃本公司主義塑膠像是信譽都不得分水果研究生，期限您是提出了挑戰能力實施特性那位重大適用於分公司委員會，希望依然對他人氣，被人因為開始有些任何本週他就透明男女領先無聊坐在性能國內，體系情緒執行環境家庭打了都沒積極招聘，商業遵守，希望男。
+                </p>
+            </div>
+        </div>
+         <!-- item 4 -->
+        <div class="item">
+            <div class="text">
+                <h2>
+                    交錯漂浮的切版技巧
+                </h2>
+                <p>
+                    超市身上投資懷疑頻道取得具備大聲強調在於，地下要是周邊章節證書關係語言機票信箱廣場街道點點繼續文章，版權哥哥圖形能夠你可以一場之外技巧好友還沒有權益官方，污染一場平均顯然以前是怎麼，視頻給我們許多存儲經營許可證快車前往回覆你說我又財富和我，幾個中間風情我。
+                </p>
+            </div>
+            <div class="pic">
+                <img src="https://picsum.photos/600/350/?random=40">
+            </div>
+        </div>
+     </div>
+</body>
+</html>
