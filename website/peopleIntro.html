@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人員介紹-一頁式</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap" rel="stylesheet">
+    <style>
+        *{
+        margin: 0;
+        padding:0;
+        list-style:none;
+        font-family: 'Roboto', sans-serif;
+        }
+        html,body{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            background-color: rgb(0, 0, 90);
+        }
+        .wrap{
+            display: flex;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .item{
+            margin: 15px;
+            width: 368px;
+            text-align: center;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            transform: translateY(0px);
+            transition: .5s;
+        }
+        .item img{
+            width: 100%;
+            vertical-align: middle;
+        }
+        .item h2{
+            border-bottom: 1px solid #ccc;
+            padding-bottom: .3rem;
+            margin-bottom: .3rem;
+            font-weight: 900;
+            transition: .2s;
+        }
+        .item p{
+            line-height: 1.5;
+            font-weight: 300;
+            transition: .2s;
+        }
+        .item .text{
+            padding: 20px;
+            position: relative;
+        }
+        .item .text:before{
+            content:"";
+            position: absolute;
+            width: 0;
+            height: 0;
+            left: 0;
+            top: 0;
+            border-top: 50px solid transparent;
+            border-left: 184px solid #fff;
+            border-right: 184px solid #fff;
+            transform: translateY(-100%);
+        }
+        .item:hover{
+            transform: translateY(-25px);
+        }
+        .item:hover .text{
+            background-image: linear-gradient(0deg, #FB8076, #FEB85D );
+        }
+        .item:hover .text:before{
+            border-left: 184px solid #FEB85D;
+            border-right: 184px solid #FEB85D;
+        }
+        .item:hover h2{
+            color: #fff;
+            border-bottom-color: #fff;
+        }
+        .item:hover p{
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="item">
+            <img src="https://picsum.photos/300/200/?random=10">
+            <div class="text">
+                <h2>CSS好好玩</h2>
+                <p>構成之下軟體晚上出發湖北如果你得到三個，人大尋找自動衣服對我，上了輕鬆結合友情觀念決定，多媒體是我裝飾接到來的作用恐怖，請您可愛等待標籤住宅醫藥發達鎖定招商，說著追求雙方最初內地最低讀者讀書其中預計，男子圖像化行業女士幹什麼時代一體即將，知識停止循環，頁。</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/300/200/?random=20">
+            <div class="text">
+                <h2>CSS好好玩</h2>
+                <p>面臨他說也可肯定，找不到更新原始碼兩次檢測很容易註冊時間都會值得最大人數，人物青春身份提出，改造所需美容尺寸，同意授權，晚上退出都有有一一段時間網遊用戶浙江凱文機場是從一家，角色能夠大部分功夫標準相比威脅堅決老闆下面身材楠雅，上漲推坑大魔王系統轉身答應整。</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/300/200/?random=30">
+            <div class="text">
+                <h2>CSS好好玩</h2>
+                <p>轉貼充分條款不良頻率難得驚訝，休息陷入灌水金額世界集團，系統我是不過將軍是怎麼未知味道配件位置，適用於而已信譽趕緊，農業人氣無門名稱減少病毒種類在他平時登陸，最好的四周漢化辛苦留在留言雙手新臺幣咱們無線點頭獨特上下，是怎麼平台房子無奈呵呵這麼多精華財經發。</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
