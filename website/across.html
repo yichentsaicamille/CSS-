@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超通用橫式版面</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap" rel="stylesheet">
+    <style>
+        *{
+        margin: 0;
+        padding:0;
+        list-style:none;
+        font-family: 'Roboto', sans-serif;
+        }
+        .wrap{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(-30deg, #fdaecb,#e7597f,#fe8556);
+        }
+        .container{
+            width: 1200px;
+            margin: auto;
+            display: flex;
+            /* flex-wrap: wrap; */
+        }
+        .item{
+            width: 368px;
+            margin: 0 15px;
+            display: flex;
+            background-color: rgba(255, 255, 255, .8);
+            border: 1px solid #888;
+            box-shadow: 0 10px 30px rgb(160,0,0,0.2);
+        }
+        .item .pic{
+            width: 50%;
+        }
+        .item .pic img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .item .text{
+            width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+        }
+        .item .text h2{
+            margin-bottom: .4rem;
+            font-weight: 700;
+        }
+        .item .text p{
+            font-weight: 300;
+        }
+        .item .text .btn{
+            line-height: 1.5em;
+            border: 1px solid #ccc;
+            padding: 0 1em;
+            align-self: flex-end;
+            border-radius: 200px;
+            text-decoration: none;
+            color: #aaa;
+            margin-top: auto;
+        }
+        .item .text .btn:hover{
+            background-color: #ccc;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="item">
+                <div class="pic">
+                    <img src="https://picsum.photos/400/400/?random=10">
+                </div>
+                <div class="text">
+                    <h2>
+                        超通用橫式版面切版練習
+                    </h2>
+                    <p>
+                        調整大概窗口，許多想像大家不得精品審核上述鬱悶，實際上一次你知道配合那時只需極大主要
+                    </p>
+                    <a href="#" class="btn">more</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="pic">
+                    <img src="https://picsum.photos/400/400/?random=11">
+                </div>
+                <div class="text">
+                    <h2>
+                        超通用橫式版面切版練習
+                    </h2>
+                    <p>
+                        調整大概窗口，許多想像大家不得精品審核上述鬱悶，實際上一次你知道配合那時只需極大主要
+                    </p>
+                    <a href="#" class="btn">more</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="pic">
+                    <img src="https://picsum.photos/400/400/?random=12">
+                </div>
+                <div class="text">
+                    <h2>
+                        超通用橫式版面切版練習
+                    </h2>
+                    <p>
+                        調整大概窗口，許多想像大家不得精品審核上述鬱悶，實際上一次你知道配合那時只需極大主要
+                    </p>
+                    <a href="#" class="btn">more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
