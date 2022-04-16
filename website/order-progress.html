@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>訂單進度條</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap");
+        @import url("fontawesome-free-5.0.1/web-fonts-with-css/css/fontawesome-all.min.css");
+        *{
+        margin: 0;
+        padding:0;
+        list-style:none;
+        font-family: 'Roboto', sans-serif;
+        }
+        html,body{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            background-color: #546377;
+        }
+        .list{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .list li{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            width: 150px;
+            height: 150px;
+            font-size: 20px;
+            /* background-color: #fff; */
+            background-image: linear-gradient(9deg,#185a9d,#43cea2);
+            border-radius: 50%;
+            position: relative;
+            color: #fff;
+            box-shadow: 0px 0px 0px 2px #fff;
+        }
+        .list li .fas,.fab{
+            font-size: 30px;
+            margin-bottom: 6px;
+        }
+        .list li + li{
+            margin-left: 100px;
+        }
+        .list li + li:before{
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 2px;
+            background-color: #43cea2;
+            top: 0;
+            bottom: 0;
+            left: -100px;
+            margin: auto;
+            z-index: -1;
+            box-shadow: 0px 0px 0px 1px #fff;
+        }
+        .list li.active ~ li{
+            background-image: linear-gradient(9deg,#999,#ccc);
+        }
+        .list li.active ~ li::before{
+            background-color: #999;
+        }
+    </style>
+</head>
+<body>
+    <ol class="list">
+        <li>
+            <i class="fas fa-file-alt"></i>
+            收到訂單
+        </li>
+        <li class="active">
+            <i class="fab fa-adn"></i>
+            撿貨中
+        </li>
+        <li>
+            <i class="fas fa-truck"></i>
+            運送中
+        </li>
+        <li>
+            <i class="fas fa-american-sign-language-interpreting"></i>
+            已送達
+        </li>
+    </ol>
+</body>
+</html>
