@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字排版-中</title>
+    <style>
+        *{
+        margin: 0;
+        padding:0;
+        list-style:none;
+        }
+        /* 第一種排版 */
+        /* .wrap{
+            margin: 100px 0;
+        }
+        .container{
+            position: relative;
+            width: 1200px;
+            margin: auto;
+        }
+        .container h1{
+            width: 400px;
+            box-sizing: border-box;
+            padding: 15px;
+            background-color: #eee;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+        .container .text{
+            column-count: 2;
+            column-gap: 460px;
+        }
+        .container p{
+            line-height: 1.6;
+            margin-bottom: 1.3em;
+        }
+        .container p:first-child:first-letter{
+            font-size: 40px; 
+        } */
+
+
+        /* 第二種排版 */
+        /* .wrap{
+            margin: 100px 0;
+        }
+        .container{
+            position: relative;
+            width: 1200px;
+            margin: auto;
+        }
+        .container h1{
+            font-size: 80px;
+            width: 400px;
+            box-sizing: border-box;
+            padding: 15px;
+            color: #aaa;
+            float: right;
+            position: relative;
+        }
+        .container h1::before{
+            content: "";
+            display: block;
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border: 30px solid #eee;
+            z-index: -1;
+            bottom: -10px;
+            left: 40px;
+        }
+        .container .text{
+            column-count: 2;
+            column-gap: 30px;
+        }
+        .container p{
+            line-height: 1.6;
+            margin-bottom: 1.3em;
+        } */
+
+        /* 第三種排版 */
+        .wrap{
+            margin: 100px 0;
+        }
+        .container{
+            position: relative;
+            width: 1200px;
+            margin: auto;
+        }
+        .container h1{
+            font-size: 80px;
+            width: 400px;
+            box-sizing: border-box;
+            padding: 15px;
+            color: #aaa;
+            float: right;
+            position: relative;
+        }
+        .container h1::before{
+            content: "";
+            display: block;
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            border: 30px solid rgb(238, 208, 41);
+            z-index: -1;
+            bottom: 10px;
+            left: 10px;
+            transform: rotate(20deg);
+        }
+        .container h1::after{
+            content: "";
+            display: block;
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            background-color: #f1c55593;
+            z-index: -1;
+            bottom: 10px;
+            left: 10px;
+            transform: rotate(10deg);
+        }
+        .container .text{
+            column-count: 2;
+            column-gap: 30px;
+        }
+        .container p{
+            line-height: 1.6;
+            margin-bottom: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <h1>CSS COKE IS AWESOME</h1>
+            <div class="text">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae hic reprehenderit nihil, deserunt laborum facere, debitis molestias quos fuga ipsa, doloremque doloribus? Atque earum debitis facilis provident voluptates, suscipit est.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae hic reprehenderit nihil, deserunt laborum facere, debitis molestias quos fuga ipsa, doloremque doloribus? Atque earum debitis facilis provident voluptates, suscipit est.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae hic reprehenderit nihil, deserunt laborum facere, debitis molestias quos fuga ipsa, doloremque doloribus? Atque earum debitis facilis provident voluptates, suscipit est.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae hic reprehenderit nihil, deserunt laborum facere, debitis molestias quos fuga ipsa, doloremque doloribus? Atque earum debitis facilis provident voluptates, suscipit est.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae hic reprehenderit nihil, deserunt laborum facere, debitis molestias quos fuga ipsa, doloremque doloribus? Atque earum debitis facilis provident voluptates, suscipit est.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae hic reprehenderit nihil, deserunt laborum facere, debitis molestias quos fuga ipsa, doloremque doloribus? Atque earum debitis facilis provident voluptates, suscipit est.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

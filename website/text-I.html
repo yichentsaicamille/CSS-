@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字排版-上</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap");
+        @import url("fontawesome-free-5.0.1/web-fonts-with-css/css/fontawesome-all.min.css");
+        *{
+        margin: 0;
+        padding:0;
+        list-style:none;
+        font-family: 'Roboto', sans-serif;
+        }
+        /* 第一種變化 */
+        /* .container{
+            width: 1200px;
+            margin: auto;
+            display: flex;
+            padding: 100px 0;
+        } */
+        /* .container h1{
+            width: 400px;
+            text-align: right;
+            box-sizing: border-box;
+            padding:20px 15px 0;
+            background-color: #d5c7b9;
+        } */
+        /* .container h1::after{
+            content: "";
+            display: block;
+            height: 4px;
+            width: 4em;
+            background-color: #444;
+            margin-left: auto;
+        } */
+        /* column-count：文字欄位數 */
+        /* .container .text{
+            width: 800px;
+            box-sizing: border-box;
+            padding: 0 15px;
+            column-count: 2;
+            column-gap: 30px;
+        } */
+
+        /* 第二種變化 */
+        /* .container{
+            width: 1200px;
+            margin: auto;
+            padding: 100px 0;
+        }
+        .container h1{
+            width: 300px;
+            text-align: right;
+            box-sizing: border-box;
+            padding:15px;
+            border-right: 3px solid #555;
+            float: left;
+            margin-right: 0.5em;
+            font-size: 42px;
+        }
+        .container .text{
+            box-sizing: border-box;
+            padding: 0 15px;
+        } */
+
+
+        /* 第三種變化 */
+        .container{
+            width: 1200px;
+            margin: auto;
+            padding: 100px 0;
+        }
+        .container h1{
+            box-sizing: border-box;
+            padding: 0 15px;
+            margin-bottom: 30px; 
+            font-size: 100px;
+            color: #aaa;
+            position: relative;
+        }
+        .container h1::after{
+            content: "";
+            display: block;
+            width: 100%;
+            height: 70px;
+            background-color: #eee;
+            position: absolute;
+            bottom: 0;
+            z-index: -1;
+        }
+        .container .text{
+            box-sizing: border-box;
+            padding: 0 15px;
+            column-count: 2;
+            column-gap: 30px;
+        }
+        .container .text p::first-letter{
+            font-size: 30px;
+            float: left;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <h1>CSS COKE IS AWESOME</h1>
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, deleniti aliquid. Cumque dolor minima consectetur vel dolore eius atque omnis neque explicabo, natus assumenda amet itaque ratione iusto tempore corporis?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio repellendus sunt magnam eius impedit qui cum eligendi omnis laborum, quidem in laboriosam suscipit iusto, possimus aliquam, eos ipsum illum ea?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio repellendus sunt magnam eius impedit qui cum eligendi omnis laborum, quidem in laboriosam suscipit iusto, possimus aliquam, eos ipsum illum ea?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio repellendus sunt magnam eius impedit qui cum eligendi omnis laborum, quidem in laboriosam suscipit iusto, possimus aliquam, eos ipsum illum ea?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio repellendus sunt magnam eius impedit qui cum eligendi omnis laborum, quidem in laboriosam suscipit iusto, possimus aliquam, eos ipsum illum ea?</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
